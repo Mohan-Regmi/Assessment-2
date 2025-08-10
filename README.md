@@ -6,19 +6,17 @@ Member 2 - Sanjeev Khadka (98
 Member 3 - Ritesh Singh (98
 
 Project Description:
-This is a small web system created for project on MIT122.
+This is a small web site created for MotoGP Enthusiastic.
 
 Technologies Used:
 HTML, CSS, JavaScript, PHP, MySQL and GitHub
 
 Pages:
-index
-about
-register-student
-register-lecturer
-enter-marks
-check-marks
-contact
+Home
+Contact Us
+Blogs
+Accessories
+Bike
 
 Database Tables:
 Students
