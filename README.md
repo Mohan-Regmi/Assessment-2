@@ -1,4 +1,4 @@
-MIT122 Group Project - Assessment 2
+MIT122 Group Project - MotoGP Legends Hub
 
 Team Members:
 Member 1 - Mohan Regmi (987871)
