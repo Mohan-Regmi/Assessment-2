@@ -26,4 +26,4 @@ Lecturers
 Marks
 
 Link:
-https://github.com/Mohan-Regmi/Assessment-2
+https://github.com/Mohan-Regmi/MotoGP-Legends-Hub
