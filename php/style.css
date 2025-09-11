@@ -1,216 +1,432 @@
-/* Reset and global styles */
-* {
+*{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-body {
-    background-color: #f9f9f9;
-    color: #222;
-    line-height: 1.6;
-}
-.container {
-    margin: 0 120px;
+.container{
+    margin: 0 120px 0 120px;
 }
 
-/* Navbar */
-nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px 40px;
-    background-color: #111;
-}
-nav img {
+nav img{
     width: 60px;
     height: 60px;
+    padding: 5px;
 }
-nav button {
-    background-color: #424141;
-    color: #fff;
-    border-radius: 20px;
-    padding: 10px 20px;
-    cursor: pointer;
-    border: none;
-    transition: 0.3s;
-}
-nav button:hover {
-    background-color: #e00606;
-}
-
-/* Test drive */
-.test_drive_btn {
-    background-color: #e00606;
-    border: none;
-    padding: 12px 20px;
+nav button{
+    background-color: rgb(66, 65, 65);
     color: white;
     border-radius: 20px;
+    padding: 10px;
     cursor: pointer;
-    font-weight: 600;
+    float: right;
+    width: 120px;
+    position: relative;
+    top: 20px;
+    right: 90px;
 }
-.test_drive_btn:hover {
-    background-color: #b50505;
+.test_drive_btn{
+    border: none;
+    padding: 12px;
+    background-color: rgb(224, 6, 6)   ;
+    color: white;
 }
-
-/* Main body */
-.main_body {
+.test_drive_btn:hover{
+    transition: 0.5s;
+    background-color: rgb(224, 6, 6);
+    color: white;
+}
+.main_body{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 60px 0;
-    gap: 40px;
+    margin-top: 45px;
 }
-.first_main_body h3 {
+.first_main_body{
+    flex: 0.7;
+}
+.first_main_body h3{
     margin-bottom: 20px;
-    font-size: 24px;
-    color: #333;
 }
-.first_main_body span {
-    display: block;
-    font-size: 16px;
-    color: #444;
+.first_main_body span{
     text-align: justify;
 }
-.second_main_body img {
-    height: 500px;
-    transition: 0.3s ease-in-out;
+.second_main_body{
+    flex: 1;
 }
-
-/* Color buttons */
-.choose_color1, .choose_color2, .choose_color3 {
-    border-radius: 50%;
-    padding: 12px;
-    width: 38px;
-    height: 38px;
-    border: 2px solid #ccc;
-    cursor: pointer;
-    transition: 0.3s;
+.second_main_body img{
+    position: relative;
+    bottom: 50px;
 }
-.choose_color1 { background-color: red; }
-.choose_color2 { background-color: silver; margin-left: 5px; }
-.choose_color3 { background-color: black; margin-left: 5px; }
-.choose_color1:hover, .choose_color2:hover, .choose_color3:hover {
-    border: 2px solid #e00606;
+.ducati_flag{
+    width: 60px;
 }
-
-/* Explore button */
-.explore_btn {
-    cursor: pointer;
-    padding: 12px 25px;
+.choose_color1{
+    background-color: red;
+    border-radius: 49%;
+    padding: 10px;
+    width: 35px;
     border: none;
-    border-radius: 25px;
+    cursor: pointer;
+}
+.choose_color2{
+    margin-left: 5px;
+    background-color: silver;
+    border-radius: 49%;
+    padding: 10px;
+    width: 35px;
+    border: none;
+    cursor: pointer;
+}
+.choose_color3{
+    margin-left: 5px;
+    background-color: black;
+    border-radius: 49%;
+    padding: 10px;
+    width: 35px;
+    border: none;
+    cursor: pointer;
+}
+.second_main_body img{
+    height: 550px;
+}
+#silver_bike{
+    display: none;
+}
+#black_bike{
+    display: none;
+}
+.explore_btn{
+    cursor: pointer;
+    background-color: red;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
     color: white;
     font-weight: 700;
-    background: linear-gradient(-60deg, red 40%, white 30%, green 30%);
-    transition: all 0.3s ease-in-out;
+    background: linear-gradient(-60deg, red 50%, white 30%, green 30%);
 }
-.explore_btn:hover {
-    box-shadow: 0px 8px 20px rgba(36, 36, 36, 0.3);
+.explore_btn:hover{
+    box-shadow: 10px 10px 20px rgba(36, 36, 36, 0.5);
+    transition: box-shadow 0.5s ease-in-out;
 }
 
-/* Login */
-.main_login_form {
-    backdrop-filter: blur(10px);
-    width: 350px;
-    height: auto;
-    padding: 20px;
+.login_btn{
+    background-color: rgb(224, 6, 6);
+    border: none;
+    padding: 10px;
+    margin-top: 0px;
+}
+.anchor_tag{
+    text-decoration: none;
+    text-align: center;
+    margin: 20px;
+    position: relative;
+    bottom: 30px;
+    left: 300px;
+    color: black;
+    font-weight: 900;
+}
+.home_first_body{
+    background-color: rgb(244, 244, 244);
+}
+.home_first_body_inner{
+    text-align: center;
+    padding-top: 50px;
+}
+.home_first_body_inner img{
+    width: 100%;
+}
+.home_second_body{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.home_second_body button{
+    border: 1px solid black;
+    padding: 10px;
+    cursor: pointer;
+    background-color: rgb(239, 239, 239) ;
+}
+.home_second_body button:hover{
+    border: none;
+    transition: 0.5s ease;
+    color: white;
+    background-color: rgb(224, 6, 6);
+}
+.home_third_body{
+    /* width: 600px; */
+    display: flex;
+    padding: 8px;
+        /* position: relative;
+        left: 350px; */
+    justify-content: center;
+    background-color: white;
+}
+#select_bike{
+    margin-right: 10px;
+    padding: 10px;
+    width: 130px;
+    background-color: rgb(236, 234, 234);
+}
+.search_btn{
+    width: 100px;
+    background-color:rgb(224, 6, 6);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.home_forth_body{
+    background-color: rgb(244, 244, 244);
+}
+.home_forth_body h1{
+    padding-top: 60px;
+    text-align: center;
+}
+.card_container{
+    display: flex;
+    flex-direction: row;;
+flex-wrap: wrap;
+gap: 20px;
+}
+.card1{
+    background-color: white;
+    margin: 10px;
+    width: 280px;
+    height: 400px;
+    box-shadow: 10px 10px 20px rgba(157, 157, 157, 0.5);
+}
+.card_header img{
+    width: 280px;
+    height: 280px;
+}
+.home_card_p{
+    color: rgb(224, 6, 6);
+    padding: 10px;
+}
+.home_card_h2{
+    padding: 10px;
+}
+.card_image_logo{
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+}
+.home_fifth_body{
+    padding-bottom: 50px;
+}
+.custom_footer{
+    background-color: black;
+    padding-top: 25px;
+}
+.first_footer img{
+    width: 80px;
+    height: 84px;
+}
+.first_footer input{
+    float: right;
+    border: none;
+    border-bottom: 2px solid rgb(193, 191, 191);
+    padding: 5px;
+    width: 200px;
+    position: relative;
+    top: 20px;
+    background-color: black;
+    color: white;
+}
+.first_footer input:focus{
+    outline: none;
+}
+.send_icon{
+    margin-left: 10px;
+    width: 2% !important;
+    height: 20px !important;
+    float: right;
+    position: relative;
+    top: 25px;
+}
+.lots_of_content{
+    color: white;
+    display: flex;
+}
+.first_content_footer{
+    flex: 1;
+}
+.second_content_footer{
+    flex: 1;
+}
+.third_content_footer{
+    flex: 1;
+}
+.forth_content_footer{
+    flex: 1;
+}
+.social_logo{
+    width: 40px;
+    height: 41px;
+    padding-top: 20px;
+}
+.second_content_footer p, .third_content_footer p, .forth_content_footer p{
+padding: 10px;
+}
+.second_content_footer h3, .third_content_footer h3, .forth_content_footer h3{
+margin-left: 10px;
+}
+
+
+/* -----------------------------------------bike.html-------------------------------------------------------- */
+
+.middle_main_content{
+    background-color: rgb(244, 244, 244);
+    /* border-top-left-radius: 250%; */
+    /* border-top-right-radius: 980%;
+    border-bottom-left-radius: 100% 700%;
+    border-bottom-right-radius: 1050%;
+    background-color: rgb(224, 6, 6) ; */
+}
+.middle_main_content::before{
+border-radius: 50% 50%;
+transform: translate(-4%,40%);
+}
+.middle_main_content::after{
+    border-radius: 100% 50%;
+    transform: translate(-4%,40%);
+    z-index: -1;
+}
+.first_bike_content{
+    display: flex;
+    padding-top: 50px;
+}
+.left_first_content{
+    flex: 1;
+    text-align: center;
+    
+
+}
+.left_first_content p {
+    text-align: justify;
+}
+.right_first_content{
+    margin-left: 50px;
+    flex: 1;
+    
+}
+.h2r_second_box{
+    border-left: 3px solid white;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.h2r_box{
+    border-left: 3px solid rgb(224, 6, 6);
+    text-align: left;
+    padding-left: 20px;
+}
+.top_three_bike{
+    background-color: rgb(224, 6, 6);
+    color: white;
+    text-align: center;
+}
+.bike_card_container{
+    justify-content: center;
+    align-items: center;
+}
+.top_4_text{
+    background-color: white;
+    color:black;
+    text-align: center;
+}
+/* ----------------------------------------login-------------------------------------------------- */
+.main_login_form{
+    backdrop-filter: blur(6px);
+
+    width: 20%;
+    height: 390px;
     position: absolute;
     left: 50%;
     top: 50%;
+    -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    border: 3px solid #e00606;
-    border-radius: 15px;
-    background: rgba(0, 0, 0, 0.7);
+        border: 3px solid rgb(224, 6, 6)
 }
-.login_content {
+.login_content{
+    padding: 10px;
     display: flex;
     flex-direction: column;
-    gap: 12px;
 }
-.login_content label {
-    color: white;
-    font-weight: 500;
+.login_content label{
+    color:white
 }
-.login_content input {
-    padding: 10px;
-    border-radius: 8px;
-    border: none;
-    outline: none;
+.login_hr{
+    display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid rgb(224, 6, 6);
+  /* padding: 0; */
 }
-.login_btn {
-    padding: 10px;
-    background-color: #e00606;
+.a_login_btn{
+    background-color: rgb(224, 6, 6);
     color: white;
     border-radius: 10px;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
+    display: flex;
+    justify-content: center;    
 }
-.login_btn:hover {
-    background-color: #b50505;
-}
-
-/* Footer */
-.custom_footer {
-    background-color: #111;
-    padding: 40px 20px;
+.login_btn{
+    padding: 10px;
+    background-color: rgb(224, 6, 6);
     color: white;
-}
-.lots_of_content {
+    border-radius: 10px;
     display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    justify-content: space-between;
-}
-.lots_of_content div h3 {
-    margin-bottom: 10px;
-    font-size: 18px;
-}
-.social_logo {
-    width: 35px;
-    height: 35px;
-    margin: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-.social_logo:hover {
-    transform: scale(1.1);
-}
-
-/* Cards */
-.card_container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
     justify-content: center;
-    margin-top: 30px;
 }
-.card1 {
+.login_content input{
+    padding: 5px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+/* ----------------------------------blogs---------------------------------------------- */
+.blog_main{
+    background-color: rgb(244, 244, 244);
+}
+.middle_blog_part{
+    padding-top: 30px;
+    display: flex;
+    gap: 40px;
+}
+.left_blog{
+    flex: 1;
+}
+.right_blog{
+    flex: 0.4;
     background-color: white;
-    width: 280px;
-    height: 400px;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0px 5px 15px rgba(0,0,0,0.15);
-    transition: 0.3s;
 }
-.card1:hover {
-    transform: translateY(-8px);
-    box-shadow: 0px 12px 25px rgba(0,0,0,0.25);
+.blog_big_card{
+    width: 75%;
+    height: 500px;
+    margin: auto;
+    background-color:white;
+    border-radius: 30px;
+
 }
-.card_header img {
+.main_blog_pic{
     width: 100%;
-    height: 250px;
-    object-fit: cover;
 }
-.home_card_p {
-    color: #e00606;
+.first_blog{
+    background-color: white;
+    border-radius: 10px;
     padding: 10px;
-    font-weight: bold;
+    text-align: justify;
+    text-decoration: none;
+    margin:15px;
 }
-.home_card_h2 {
-    padding: 10px;
-    font-size: 18px;
-    color: #333;
+.first_blog a{
+    text-decoration: none;
+    color:black
+}
+.first_blog h4{
+    color:rgb(224, 6, 6);
+}
+.blog_link{
+    text-decoration: none;
+    color: black;
+}
+.blog_card_container{
+    padding-bottom: 30px;
 }
