@@ -1,33 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../style.css" />
-    <title>login</title>
-  </head>
-  <body style="background-image: url('../.../assets/theme.jpeg')">
-    <div class="container">
-      <div class="main_login_form">
-        <i
-          ><h1 style="text-align: center; padding-bottom: 10px; color: black">
-            login
-          </h1></i
-        >
-        <hr class="login_hr" />
-        <br />
-        <div class="login_content">
-          <label for=""> Username</label>
-          <input type="email" name="" id="" /> <br />
-          <label for=""> Password</label>
-          <input type="password" name="" id="" /><br />
-          <a href="" style="color: white">Create new account</a><br />
-          <button class="login_btn">Submit</button><br />
-          <a href="index.html" style="text-decoration: none" class="a_login_btn"
-            ><button class="login_btn">Go Back</button></a
-          >
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../style.css" />
+  <title>Login</title>
+</head>
+<body style="background:#f2f2f2">
+  <div class="container">
+    <div class="main_login_form">
+      <h1 style="text-align:center; color:black">Login</h1>
+      <hr class="login_hr" />
+      <div class="login_content">
+        <label for="email">Username</label>
+        <input type="email" id="email" required />
+
+        <label for="password">Password</label>
+        <input type="password" id="password" required />
+
+        <button class="login_btn" onclick="login()">Submit</button>
+        <a href="../register/register.html" class="a_login_btn">
+          <button type="button" class="login_btn">Create new account</button>
+        </a>
       </div>
     </div>
-  </body>
+  </div>
+
+  <script>
+    function login() {
+      const email = document.getElementById("email").value;
+      const pass = document.getElementById("password").value;
+
+      // hardcoded login credentials
+      if (email === "test@example.com" && pass === "123456") {
+        alert("Login successful!");
+        window.location.href = "blogs.html";
+      } else {
+        alert("Invalid email or password!");
+      }
+    }
+  </script>
+</body>
 </html>
